@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"perl.inc": ["$ROOT_PATH/lib"],
+    "editor.formatOnSave": true
+	}
+}

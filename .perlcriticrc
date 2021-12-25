@@ -1,0 +1,7 @@
+theme = core
+
+# I rather happen to like this syntax thanks
+[-ControlStructures::ProhibitPostfixControls]
+
+# For experimental::signatures
+[-Subroutines::ProhibitSubroutinePrototypes]
