@@ -1,6 +1,7 @@
 package MojoX::Log::GELF;
 use Mojo::Base 'Mojo::EventEmitter', -signatures;
 use Carp qw(croak);
+use Data::Printer qw();
 use Mojo::IOLoop;
 use Mojo::Log;
 use Log::Gelf::Util qw();
@@ -141,6 +142,15 @@ sub _prepare_message ($self, $payload) {
     full_message  => "$payload->{message}",
     %additional_fields,
   });
+}
+
+sub dump ($self, $dump) {
+  return unless $self->is_level(7);
+
+  my @caller = caller();
+  $self->debug("dump:$caller[0]:$caller[2]");
+
+  Data::Printer::p($dump);
 }
 
 sub _tx_message ($self, $gelf_message) {
