@@ -1,5 +1,5 @@
 requires 'Carp';
-requires 'Log::Gelf::Util';
+requires 'Log::GELF::Util';
 requires 'Mojo::Base';
 requires 'Mojo::Emitter';
 requires 'Mojo::IOLoop';

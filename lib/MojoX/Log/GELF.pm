@@ -4,10 +4,10 @@ use Carp qw(croak);
 use Data::Printer qw();
 use Mojo::IOLoop;
 use Mojo::Log;
-use Log::Gelf::Util qw();
+use Log::GELF::Util qw();
 use Sys::Hostname qw(hostname);
 
-use version; our $VERSION = version->declare('v0.0.2');
+use version; our $VERSION = version->declare('v0.0.3');
 
 has 'host'              => sub { return hostname(); };
 has 'gelf_address'      => '127.0.0.1';

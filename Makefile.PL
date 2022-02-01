@@ -18,7 +18,7 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "Carp" => 0,
     "Data::Printer" => 0,
-    "Log::Gelf::Util" => 0,
+    "Log::GELF::Util" => 0,
     "Mojo::Base" => 0,
     "Mojo::IOLoop" => 0,
     "Mojo::Log" => 0,
@@ -33,7 +33,7 @@ my %WriteMakefileArgs = (
     "lib" => 0,
     "strict" => 0
   },
-  "VERSION" => "v0.0.2",
+  "VERSION" => "v0.0.3",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -44,7 +44,7 @@ my %FallbackPrereqs = (
   "Carp" => 0,
   "Data::Printer" => 0,
   "Exporter" => 0,
-  "Log::Gelf::Util" => 0,
+  "Log::GELF::Util" => 0,
   "Mojo::Base" => 0,
   "Mojo::IOLoop" => 0,
   "Mojo::Log" => 0,
